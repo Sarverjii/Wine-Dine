@@ -1,172 +1,203 @@
-# Wine & Dine Restaurant Website
+# 🍷 Wine & Dine Restaurant Website
 
-A modern, responsive website for a fine dining restaurant featuring menu management, customer reviews, and an admin panel.
+<img src="public/LogoWine&Dine.png" alt="Wine & Dine Logo" width="200" height="auto">
 
-## 🌟 Features
+A sophisticated and modern restaurant website built with React and Material-UI, offering an elegant dining experience through a beautiful digital interface.
 
-### Public Features
 
-- **Home Page**: Elegant landing page showcasing the restaurant's ambiance and key features
-- **Menu Page**:
-  - Interactive menu with categorized items
-  - Search functionality to find specific dishes
-  - Category filters for easy navigation
-  - Beautiful image display for each menu item
+## ✨ Features
+
+### 🍽️ Public Features
+- **Interactive Menu System**
+  - Categorized menu items
+  - Advanced search functionality
+  - Beautiful image gallery
   - Responsive grid layout
-- **Reviews Section**:
-  - Customer testimonials and ratings
-  - Public review submission form
-- **Contact Page**:
-  - Contact form for customer inquiries
-  - Location and contact information
+  - Real-time price updates
 
-### Admin Features
+- **Customer Experience**
+  - Customer reviews and ratings
+  - Interactive reservation system
+  - Contact form with real-time validation
+  - Location and hours information
+  - Special events calendar
 
-- **Secure Admin Panel**:
-  - Protected login system
-  - Dashboard for managing all aspects of the restaurant
-- **Menu Management**:
-  - Add, edit, and delete menu items
-  - Categorize items (Salads, Sandwiches, Burgers, etc.)
-  - Upload and manage item images
-  - Set prices and descriptions
-- **Review Management**:
-  - Approve or reject customer reviews
-  - Monitor customer feedback
-- **Contact Management**:
-  - View and respond to customer inquiries
-  - Mark messages as read
-  - Delete messages
+### 👨‍💼 Admin Features
+- **Secure Dashboard**
+  - Protected admin routes
+  - Real-time analytics
+  - User management
+  - Content management system
 
-## 🛠️ Technology Stack
+- **Menu Management**
+  - Add/Edit/Delete menu items
+  - Category management
+  - Image upload and optimization
+  - Price and availability control
 
-- **Frontend**:
+- **Review Management**
+  - Moderate customer reviews
+  - Response management
+  - Review analytics
 
+## 📸 Screenshots
+
+### 🏠 Home Page
+![Home Page](public/ReadmeImages/HomePage.png)
+*Elegant landing page showcasing the restaurant's ambiance*
+
+### 📱 Mobile Experience
+![Home Mobile](public/ReadmeImages/HomeMobile.jpeg)
+*Responsive design for mobile devices*
+
+### 🍽️ Menu System
+![Customer Menu](public/ReadmeImages/CustomerMenu.png)
+*Interactive menu with categorized items*
+
+![Customer Menu Mobile](public/ReadmeImages/CustomerMenuMobile.png)
+*Mobile-optimized menu view*
+
+### 👥 Customer Reviews
+![Customer Review](public/ReadmeImages/CustomerReview.png)
+*Customer review and rating system*
+
+### 📞 Contact Us
+![Contact Us](public/ReadmeImages/ContactUs.png)
+*Contact form and location information*
+
+### 👨‍💼 Admin Dashboard
+![Admin Menu](public/ReadmeImages/AdminMenu.png)
+*Admin menu management interface*
+
+![Admin Review](public/ReadmeImages/AdminReview.png)
+*Review management system*
+
+![Admin Review Mobile](public/ReadmeImages/AdminRevieMobile.png)
+*Mobile view of admin review management*
+
+![Admin Messages](public/ReadmeImages/AdminMessages.png)
+*Customer message management system*
+
+## 🛠️ Tech Stack
+
+- **Frontend**
   - React.js
-  - Material-UI (MUI) for UI components
-  - React Router for navigation
-  - Firebase for authentication and database
-  - Cloudinary for image management
+  - Material-UI (MUI)
+  - React Router
+  - Redux Toolkit
+  - Axios
 
-- **Styling**:
-  - Material-UI theming
-  - Custom CSS
-  - Responsive design for all devices
+- **Backend**
+  - Node.js
+  - Express.js
+  - MongoDB
+  - JWT Authentication
+
+- **Deployment**
+  - Vercel (Frontend)
+  - Render (Backend)
+  - MongoDB Atlas
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-
 - Node.js (v14 or higher)
 - npm or yarn
-- Firebase account
-- Cloudinary account
+- MongoDB account
+- Git
 
 ### Installation
 
-1. Clone the repository:
-
+1. Clone the repository
 ```bash
 git clone https://github.com/Sarverjii/Wine-Dine.git
-cd WineAndDine
+cd Wine-Dine
 ```
 
-2. Install dependencies:
-
+2. Install dependencies
 ```bash
+# Install frontend dependencies
+npm install
+
+# Install backend dependencies
+cd backend
 npm install
 ```
 
-3. Create a `.env` file in the root directory with the following variables:
-
+3. Environment Setup
+Create a `.env` file in the root directory:
 ```env
-VITE_FIREBASE_API_KEY=your_firebase_api_key
-VITE_FIREBASE_AUTH_DOMAIN=your_firebase_auth_domain
-VITE_FIREBASE_PROJECT_ID=your_firebase_project_id
-VITE_FIREBASE_STORAGE_BUCKET=your_firebase_storage_bucket
-VITE_FIREBASE_MESSAGING_SENDER_ID=your_firebase_messaging_sender_id
-VITE_FIREBASE_APP_ID=your_firebase_app_id
-VITE_CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
-VITE_CLOUDINARY_API_KEY=your_cloudinary_api_key
-VITE_CLOUDINARY_API_SECRET=your_cloudinary_api_secret
-VITE_CLOUDINARY_UPLOAD_PRESET=your_cloudinary_upload_preset
+REACT_APP_API_URL=your_backend_url
+REACT_APP_GOOGLE_MAPS_API_KEY=your_google_maps_api_key
 ```
 
-4. Start the development server:
-
+4. Start the development server
 ```bash
+# Start frontend
+npm start
+
+# Start backend (in a separate terminal)
+cd backend
 npm run dev
 ```
 
 ## 📱 Responsive Design
 
 The website is fully responsive and optimized for:
-
 - Desktop computers
 - Tablets
 - Mobile phones
 
 ## 🔒 Security Features
 
-- Protected admin routes
-- Secure authentication
-- Image upload validation
-- Form validation
-- XSS protection
+- JWT Authentication
+- Protected Routes
+- Input Validation
+- XSS Protection
+- CORS Configuration
+- Rate Limiting
 
 ## 🎨 Design Features
 
 - Modern and elegant UI
 - Consistent color scheme
-- Playfair Display font for headings
-- Smooth animations and transitions
+- Smooth animations
 - Intuitive navigation
 - Clear typography hierarchy
-
-## 📝 Menu Categories
-
-The website supports the following menu categories:
-
-- Salads
-- Sandwiches
-- Fries
-- Burgers
-- Sliders
-- Pizza
-- Pasta
-- Garlic Bread
-- Wraps
-- Dumpling
-- Chinese
-- Deserts
-- CheeseCake
-
-## 🔄 Future Enhancements
-
-Planned features for future updates:
-
-- Online reservation system
-- Online ordering system
-- Special events calendar
-- Newsletter subscription
-- Social media integration
-- Customer loyalty program
+- Optimized images
 
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
 ## 📄 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 👥 Authors
 
-- Your Name - Initial work
+- **Sarverjii** - *Initial work* - [GitHub Profile](https://github.com/Sarverjii)
 
 ## 🙏 Acknowledgments
 
 - Material-UI for the component library
-- Firebase for backend services
-- Cloudinary for image management
+- MongoDB for database services
+- Vercel for hosting
 - All contributors who have helped shape this project
+
+## 📞 Contact
+
+For any queries or support, please reach out to:
+- Email: [your-email@example.com]
+- LinkedIn: [Your LinkedIn Profile]
+- Twitter: [@YourTwitterHandle]
+
+---
+
+⭐️ If you like this project, please give it a star on GitHub!
